@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Netflix Clone — Streaming Platform
 
 A production-quality Netflix-inspired streaming platform built using Next.js App Router, TypeScript, Tailwind CSS, Framer Motion, and TMDB API.
@@ -132,3 +133,7 @@ Netflix branding/assets should not be used commercially.
 ## License
 
 MIT
+=======
+# Netflix-Clone
+Production-quality Netflix-inspired streaming platform built with Next.js App Router, TypeScript, Tailwind CSS, Framer Motion, and TMDB API.
+>>>>>>> 02f1492cf0c2c9811cb08f7fde9861b04aa549a9
