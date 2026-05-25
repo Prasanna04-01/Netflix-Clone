@@ -13,7 +13,7 @@ export default function SearchPage() {
   return (
     <MainLayout>
       <PageWrapper>
-        <Suspense fallback={<div className="min-h-screen bg-netflix-black" />}>
+        <Suspense fallback={<div className="min-h-screen bg-nexora-black" />}>
           <SearchOverlay isOpen={true} onClose={() => {}} mode="page" />
         </Suspense>
       </PageWrapper>

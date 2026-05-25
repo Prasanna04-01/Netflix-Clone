@@ -37,15 +37,15 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}
             transition={{ type: "tween", duration: 0.3 }}
-            className="fixed inset-y-0 left-0 z-50 w-[280px] bg-netflix-black p-6 shadow-2xl lg:hidden flex flex-col"
+            className="fixed inset-y-0 left-0 z-50 w-[280px] bg-nexora-black p-6 shadow-2xl lg:hidden flex flex-col"
           >
             <div className="flex items-center justify-between mb-8">
-              <span className="text-2xl font-black italic tracking-tighter text-netflix-red">
-                NETFLIX
+              <span className="text-2xl font-black italic tracking-tighter nexora-logo-gradient">
+                NEXORA
               </span>
               <button
                 onClick={onClose}
-                className="p-1 text-netflix-grey hover:text-white transition-colors"
+                className="p-1 text-nexora-grey hover:text-white transition-colors"
                 aria-label="Close menu"
               >
                 <X className="h-6 w-6" />
@@ -62,7 +62,7 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                       onClick={onClose}
                       className={cn(
                         "text-lg font-bold transition-colors",
-                        isActive ? "text-netflix-red" : "text-netflix-grey hover:text-white"
+                        isActive ? "text-nexora-red" : "text-nexora-grey hover:text-white"
                       )}
                     >
                       {item.label}
@@ -74,12 +74,12 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
 
             <div className="mt-auto pt-8 border-t border-white/10">
               <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-md bg-netflix-red flex items-center justify-center font-bold text-sm">
+                <div className="h-10 w-10 rounded-md bg-gradient-to-br from-nexora-red to-[#B20710] flex items-center justify-center font-bold text-sm shadow-lg shadow-nexora-red/20">
                   N
                 </div>
                 <div>
-                  <p className="text-white font-bold text-sm">Netflix User</p>
-                  <p className="text-netflix-grey text-xs">Premium Member</p>
+                  <p className="text-white font-bold text-sm">Nexora User</p>
+                  <p className="text-nexora-grey text-xs">Premium Member</p>
                 </div>
               </div>
             </div>

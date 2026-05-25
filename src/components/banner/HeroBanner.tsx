@@ -39,7 +39,7 @@ export const HeroBanner = memo(() => {
 
   if (loading) {
     return (
-      <div className="h-screen w-full flex items-center justify-center bg-netflix-black">
+      <div className="h-screen w-full flex items-center justify-center bg-nexora-black">
         <LoadingSpinner size="lg" />
       </div>
     );
@@ -47,14 +47,14 @@ export const HeroBanner = memo(() => {
 
   if (error || !movie) {
     return (
-      <div className="h-[70vh] w-full flex items-center justify-center bg-netflix-black">
+      <div className="h-[70vh] w-full flex items-center justify-center bg-nexora-black">
         <ErrorState onRetry={() => window.location.reload()} />
       </div>
     );
   }
 
   return (
-    <section className="relative h-screen w-full flex items-center overflow-hidden bg-netflix-black">
+    <section className="relative h-screen w-full flex items-center overflow-hidden bg-nexora-black">
       <HeroBackground backdropPath={movie.backdrop_path} title={movie.title || movie.name || "Hero Movie"} />
       <HeroContent movie={movie} />
     </section>

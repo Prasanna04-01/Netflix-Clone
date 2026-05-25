@@ -1,38 +1,37 @@
-<<<<<<< HEAD
-# Netflix Clone — Streaming Platform
+# Nexora — Streaming Platform
 
-A production-quality Netflix-inspired streaming platform built using Next.js App Router, TypeScript, Tailwind CSS, Framer Motion, and TMDB API.
+A production-quality OTT-inspired streaming platform built using Next.js App Router, TypeScript, Tailwind CSS, Framer Motion, and TMDB API.
 
 ---
 
 ## Features
 
-* Cinematic Netflix-style homepage
-* Dynamic hero banner
-* Trending and category-based movie rows
-* Responsive movie cards
-* Dynamic movie detail pages
-* TMDB API integration
-* YouTube trailer playback
-* Advanced search system
-* Responsive OTT-platform UI
-* Framer Motion animations
-* Loading skeletons
-* Error handling states
-* App Router architecture
-* Mobile-first responsive design
+- Cinematic streaming-style homepage
+- Dynamic hero banner
+- Trending and category-based movie rows
+- Responsive movie cards
+- Dynamic movie detail pages
+- TMDB API integration
+- YouTube trailer playback
+- Advanced search system
+- Responsive OTT-platform UI
+- Framer Motion animations
+- Loading skeletons
+- Error handling states
+- App Router architecture
+- Mobile-first responsive design
 
 ---
 
 ## Tech Stack
 
-* Next.js 15 (App Router)
-* TypeScript
-* Tailwind CSS v4
-* Framer Motion
-* Axios
-* TMDB API
-* React YouTube
+- Next.js 15 (App Router)
+- TypeScript
+- Tailwind CSS v4
+- Framer Motion
+- Axios
+- TMDB API
+- React YouTube
 
 ---
 
@@ -57,7 +56,7 @@ src/
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/netflix-clone-nextjs.git
+git clone https://github.com/your-username/nexora-streaming.git
 ```
 
 Install dependencies:
@@ -88,35 +87,23 @@ NEXT_PUBLIC_TMDB_IMAGE_URL=https://image.tmdb.org/t/p/original
 
 ## Performance Optimizations
 
-* Dynamic imports
-* Lazy loading
-* Optimized image rendering
-* Suspense boundaries
-* Reduced rerenders
-* App Router server components
-* Responsive image sizing
+- Dynamic imports
+- Lazy loading
+- Optimized image rendering
+- Suspense boundaries
+- Reduced rerenders
+- App Router server components
+- Responsive image sizing
 
 ---
 
 ## Accessibility
 
-* Keyboard navigation
-* Focus management
-* ARIA labels
-* Reduced motion support
-* Semantic HTML structure
-
----
-
-## Screenshots
-
-Add:
-
-* Homepage
-* Movie details page
-* Trailer modal
-* Search overlay
-* Mobile responsive layout
+- Keyboard navigation
+- Focus management
+- ARIA labels
+- Reduced motion support
+- Semantic HTML structure
 
 ---
 
@@ -126,14 +113,10 @@ This project is created for educational and portfolio purposes only.
 
 Movie data is provided by TMDB API.
 
-Netflix branding/assets should not be used commercially.
+This project is not affiliated with Netflix or any official streaming platform.
 
 ---
 
 ## License
 
 MIT
-=======
-# Netflix-Clone
-Production-quality Netflix-inspired streaming platform built with Next.js App Router, TypeScript, Tailwind CSS, Framer Motion, and TMDB API.
->>>>>>> 02f1492cf0c2c9811cb08f7fde9861b04aa549a9

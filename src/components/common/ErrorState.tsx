@@ -26,8 +26,8 @@ export const ErrorState = ({
         className
       )}
     >
-      <div className="mb-4 rounded-full bg-netflix-red/10 p-4">
-        <AlertCircle className="h-8 w-8 text-netflix-red" />
+      <div className="mb-4 rounded-full bg-nexora-red/10 p-4">
+        <AlertCircle className="h-8 w-8 text-nexora-red" />
       </div>
       
       <h3 className="heading-md mb-2 text-white">{title}</h3>

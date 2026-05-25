@@ -21,8 +21,8 @@ export const BackdropHeader = ({ backdropPath, title }: BackdropHeaderProps) => 
         sizes="100vw"
       />
       {/* Cinematic Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-t from-netflix-black via-netflix-black/60 to-transparent z-10" />
-      <div className="absolute inset-0 bg-gradient-to-b from-netflix-black/40 via-transparent to-transparent z-10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-nexora-black via-nexora-black/60 to-transparent z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-nexora-black/40 via-transparent to-transparent z-10" />
     </div>
   );
 };

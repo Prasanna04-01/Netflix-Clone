@@ -7,7 +7,7 @@ import { MovieRowSkeleton } from "@/components/skeletons/MovieSkeletons";
  */
 export default function HomeLoading() {
   return (
-    <div className="relative min-h-screen bg-netflix-black overflow-hidden">
+    <div className="relative min-h-screen bg-nexora-black overflow-hidden">
       {/* Hero Skeleton */}
       <div className="relative h-screen w-full bg-white/5 animate-pulse flex items-center">
         <Container>

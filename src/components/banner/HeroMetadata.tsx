@@ -23,9 +23,9 @@ export const HeroMetadata = ({
         <Star className="h-4 w-4 fill-current" />
         <span>{rating} Rating</span>
       </div>
-      <span className="text-netflix-grey">|</span>
+      <span className="text-nexora-grey">|</span>
       <span>{releaseYear}</span>
-      <span className="text-netflix-grey">|</span>
+      <span className="text-nexora-grey">|</span>
       <span className="px-2 py-0.5 border border-white/40 rounded text-[10px] md:text-xs uppercase tracking-widest">
         {isAdult ? "18+" : "PG-13"}
       </span>

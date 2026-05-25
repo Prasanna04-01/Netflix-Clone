@@ -46,7 +46,7 @@ export const SearchOverlay = ({ isOpen, onClose, mode = "overlay" }: SearchOverl
           value={query}
           onChange={setQuery}
           onClear={() => setQuery("")}
-          className="max-w-2xl bg-netflix-dark/80 border-none focus:ring-2 focus:ring-netflix-red"
+          className="max-w-2xl bg-nexora-dark/80 border-none focus:ring-2 focus:ring-nexora-red"
         />
         <button
           type="button"
@@ -58,7 +58,7 @@ export const SearchOverlay = ({ isOpen, onClose, mode = "overlay" }: SearchOverl
 
             onClose();
           }}
-          className="p-2 rounded-full hover:bg-white/5 text-netflix-grey hover:text-white transition-all shrink-0"
+          className="p-2 rounded-full hover:bg-white/5 text-nexora-grey hover:text-white transition-all shrink-0"
           aria-label="Close search"
         >
           <X className="h-8 w-8" />
@@ -142,7 +142,7 @@ export const SearchOverlay = ({ isOpen, onClose, mode = "overlay" }: SearchOverl
 
   if (isPageMode) {
     return (
-      <section className="min-h-screen bg-netflix-black">
+      <section className="min-h-screen bg-nexora-black">
         {content}
       </section>
     );
@@ -155,7 +155,7 @@ export const SearchOverlay = ({ isOpen, onClose, mode = "overlay" }: SearchOverl
           initial={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: -20 }}
           animate={shouldReduceMotion ? { opacity: 1 } : { opacity: 1, y: 0 }}
           exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: -20 }}
-          className="fixed inset-0 z-[60] bg-netflix-black/95 backdrop-blur-xl overflow-y-auto no-scrollbar focus:outline-none"
+          className="fixed inset-0 z-[60] bg-nexora-black/95 backdrop-blur-xl overflow-y-auto no-scrollbar focus:outline-none"
           role="dialog"
           aria-modal="true"
           aria-label="Search movies"

@@ -8,28 +8,33 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Netflix | Stream Your Favorite Movies & Shows",
-    template: "%s | Netflix",
+    default: "Nexora — Cinematic Streaming Platform",
+    template: "%s | Nexora",
   },
-  description: "Netflix is a professional streaming platform for movies and TV shows.",
-  keywords: ["streaming", "movies", "tv shows", "netflix", "entertainment"],
-  authors: [{ name: "Netflix Team" }],
+  description: "Modern streaming platform experience built with Next.js, TypeScript, Tailwind CSS, and TMDB API.",
+  keywords: ["streaming", "movies", "tv shows", "Nexora", "entertainment", "cinematic"],
+  authors: [{ name: "Nexora Team" }],
   openGraph: {
-    title: "Netflix",
-    description: "Stream Your Favorite Movies & Shows",
-    url: "https://netflix.example.com",
-    siteName: "Netflix",
+    title: "Nexora — Cinematic Streaming Platform",
+    description: "Modern streaming platform experience built with Next.js, TypeScript, Tailwind CSS, and TMDB API.",
+    url: "https://nexora-streaming.vercel.app",
+    siteName: "Nexora",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Netflix",
-    description: "Stream Your Favorite Movies & Shows",
+    title: "Nexora — Cinematic Streaming Platform",
+    description: "Modern streaming platform experience built with Next.js, TypeScript, Tailwind CSS, and TMDB API.",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" }
+    ],
+    apple: "/apple-touch-icon.png",
   },
+  manifest: "/manifest.json",
 };
 
 export const viewport: Viewport = {
@@ -50,7 +55,7 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "min-h-screen bg-netflix-black text-white antialiased selection:bg-netflix-red/30 selection:text-white"
+          "min-h-screen bg-nexora-black text-white antialiased selection:bg-nexora-red/30 selection:text-white"
         )}
       >
         <Suspense fallback={null}>

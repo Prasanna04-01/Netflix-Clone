@@ -23,9 +23,9 @@ export const HeroBackground = ({ backdropPath, title }: HeroBackgroundProps) => 
         quality={90}
       />
       {/* Cinematic Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-r from-netflix-black via-netflix-black/40 to-transparent z-10" />
-      <div className="absolute inset-0 bg-gradient-to-t from-netflix-black via-transparent to-black/20 z-10" />
-      <div className="absolute bottom-0 left-0 w-full h-32 netflix-gradient-bottom z-20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-nexora-black via-nexora-black/40 to-transparent z-10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-nexora-black via-transparent to-black/20 z-10" />
+      <div className="absolute bottom-0 left-0 w-full h-32 nexora-gradient-bottom z-20" />
     </div>
   );
 };

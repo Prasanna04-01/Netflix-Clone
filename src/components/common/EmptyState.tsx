@@ -16,7 +16,7 @@ interface EmptyStateProps {
 export const EmptyState = ({
   title = "No results found",
   description = "Try adjusting your filters or search terms to find what you're looking for.",
-  icon = <SearchX className="h-12 w-12 text-netflix-grey" />,
+  icon = <SearchX className="h-12 w-12 text-nexora-grey" />,
   className,
   children,
 }: EmptyStateProps) => {

@@ -1,0 +1,17 @@
+{
+  "name": "Nexora — Cinematic Streaming Platform",
+  "short_name": "Nexora",
+  "description": "Modern streaming platform experience built with Next.js, TypeScript, Tailwind CSS, and TMDB API.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#141414",
+  "theme_color": "#E50914",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

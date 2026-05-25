@@ -9,7 +9,7 @@ import { cn } from "@/utils/cn";
 const YouTube = dynamic(() => import("react-youtube"), {
   ssr: false,
   loading: () => (
-    <div className="absolute inset-0 z-20 flex items-center justify-center bg-netflix-black">
+    <div className="absolute inset-0 z-20 flex items-center justify-center bg-nexora-black">
       <LoadingSpinner size="lg" />
     </div>
   ),
@@ -69,15 +69,15 @@ export const TrailerPlayer = ({ videoId, className, onReady, autoplay = true }: 
   return (
     <div className={cn("relative aspect-video w-full bg-black overflow-hidden", className)}>
       {!isLoaded && !hasError && (
-        <div className="absolute inset-0 z-20 flex items-center justify-center bg-netflix-black">
+        <div className="absolute inset-0 z-20 flex items-center justify-center bg-nexora-black">
           <LoadingSpinner size="lg" />
         </div>
       )}
 
       {hasError && (
-        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-netflix-dark text-white p-4 text-center">
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-nexora-dark text-white p-4 text-center">
           <p className="font-bold mb-2">Trailer Unavailable</p>
-          <p className="text-sm text-netflix-grey">This video could not be loaded from YouTube.</p>
+          <p className="text-sm text-nexora-grey">This video could not be loaded from YouTube.</p>
         </div>
       )}
 

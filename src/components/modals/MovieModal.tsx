@@ -127,7 +127,7 @@ export const MovieModal = ({ movie, isOpen, onClose }: MovieModalProps) => {
             animate={shouldReduceMotion ? { opacity: 1 } : { opacity: 1, scale: 1, y: 0 }}
             exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, scale: 0.9, y: 20 }}
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl bg-netflix-dark shadow-2xl no-scrollbar focus:outline-none pointer-events-auto"
+            className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl bg-nexora-dark shadow-2xl no-scrollbar focus:outline-none pointer-events-auto"
             role="dialog"
             aria-modal="true"
             aria-label={movie.title || movie.name || "Movie details"}
@@ -136,7 +136,7 @@ export const MovieModal = ({ movie, isOpen, onClose }: MovieModalProps) => {
             <button
               type="button"
               onClick={onClose}
-              className="absolute top-4 right-4 z-50 p-2 rounded-full bg-netflix-black/60 text-white hover:bg-netflix-black/80 transition-all border border-white/10"
+              className="absolute top-4 right-4 z-50 p-2 rounded-full bg-nexora-black/60 text-white hover:bg-nexora-black/80 transition-all border border-white/10"
               aria-label="Close modal"
             >
               <X className="h-6 w-6" />
@@ -145,7 +145,7 @@ export const MovieModal = ({ movie, isOpen, onClose }: MovieModalProps) => {
             {/* Content Container */}
             <div className="flex flex-col">
               {/* Header with Backdrop/Trailer */}
-              <div className="relative aspect-video w-full bg-netflix-black">
+              <div className="relative aspect-video w-full bg-nexora-black">
                 <div className="absolute inset-0 z-10">
                   {isPlayingTrailer && video?.key ? (
                     <>
@@ -153,19 +153,19 @@ export const MovieModal = ({ movie, isOpen, onClose }: MovieModalProps) => {
                       <button
                         type="button"
                         onClick={() => setIsPlayingTrailer(false)}
-                        className="absolute top-4 left-4 z-30 rounded-full bg-netflix-black/60 px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-netflix-black/80"
+                        className="absolute top-4 left-4 z-30 rounded-full bg-nexora-black/60 px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-nexora-black/80"
                       >
                         Close Trailer
                       </button>
                     </>
                   ) : isPlayingTrailer && trailerLoading ? (
-                    <div className="absolute inset-0 flex items-center justify-center bg-netflix-black text-white">
+                    <div className="absolute inset-0 flex items-center justify-center bg-nexora-black text-white">
                       <p className="text-lg font-semibold">Loading trailer...</p>
                     </div>
                   ) : isPlayingTrailer && showTrailerFallback ? (
-                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-netflix-black px-6 text-center text-white">
+                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-nexora-black px-6 text-center text-white">
                       <p className="text-2xl font-bold">Trailer Not Available</p>
-                      <p className="mt-3 max-w-xl text-sm text-netflix-grey">
+                      <p className="mt-3 max-w-xl text-sm text-nexora-grey">
                         TMDB does not currently provide a playable YouTube trailer for this title.
                       </p>
                       <button
@@ -186,7 +186,7 @@ export const MovieModal = ({ movie, isOpen, onClose }: MovieModalProps) => {
                         priority
                       />
                       {/* Gradient Overlay for Title/Actions */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-netflix-dark via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-nexora-dark via-transparent to-transparent" />
                       
                       {/* Play Button Overlay */}
                       <div className="absolute bottom-8 left-8 right-8 z-10">
@@ -227,9 +227,9 @@ export const MovieModal = ({ movie, isOpen, onClose }: MovieModalProps) => {
                         <Star className="h-5 w-5 fill-current" />
                         <span>{rating} Rating</span>
                       </div>
-                      <span className="text-netflix-grey">|</span>
+                      <span className="text-nexora-grey">|</span>
                       <span className="text-white font-medium">{releaseYear}</span>
-                      <span className="text-netflix-grey">|</span>
+                      <span className="text-nexora-grey">|</span>
                       <span className="px-2 py-0.5 border border-white/40 rounded text-xs uppercase tracking-widest text-white/90">
                         HD
                       </span>
@@ -243,25 +243,25 @@ export const MovieModal = ({ movie, isOpen, onClose }: MovieModalProps) => {
                   {/* Right: Meta */}
                   <div className="space-y-6 pt-2">
                     {loading && (
-                      <p className="text-sm text-netflix-grey">Loading details...</p>
+                      <p className="text-sm text-nexora-grey">Loading details...</p>
                     )}
 
                     {details && (
                       <div className="space-y-4">
                         <div>
-                          <span className="text-netflix-grey text-sm block mb-1">Genres</span>
+                          <span className="text-nexora-grey text-sm block mb-1">Genres</span>
                           <p className="text-white text-sm font-medium">
                             {details.genres.map(g => g.name).join(", ")}
                           </p>
                         </div>
                         <div>
-                          <span className="text-netflix-grey text-sm block mb-1">Original Language</span>
+                          <span className="text-nexora-grey text-sm block mb-1">Original Language</span>
                           <p className="text-white text-sm font-medium uppercase">
                             {details.original_language}
                           </p>
                         </div>
                         <div>
-                          <span className="text-netflix-grey text-sm block mb-1">Status</span>
+                          <span className="text-nexora-grey text-sm block mb-1">Status</span>
                           <p className="text-white text-sm font-medium">
                             {details.status}
                           </p>

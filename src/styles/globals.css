@@ -3,10 +3,10 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-netflix-red: #E50914;
-  --color-netflix-black: #141414;
-  --color-netflix-dark: #181818;
-  --color-netflix-grey: #808080;
+  --color-nexora-red: #E50914;
+  --color-nexora-black: #141414;
+  --color-nexora-dark: #181818;
+  --color-nexora-grey: #808080;
 }
 
 :root {
@@ -20,7 +20,7 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased selection:bg-netflix-red/30 selection:text-white;
+    @apply bg-background text-foreground antialiased selection:bg-nexora-red/30 selection:text-white;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
   }
 
@@ -30,11 +30,11 @@
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-netflix-black;
+    @apply bg-nexora-black;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-netflix-grey/30 rounded-full hover:bg-netflix-grey/50 transition-colors;
+    @apply bg-nexora-grey/30 rounded-full hover:bg-nexora-grey/50 transition-colors;
   }
 }
 
@@ -53,11 +53,11 @@
   }
 
   .body-lg {
-    @apply text-lg md:text-xl text-netflix-grey font-medium leading-relaxed;
+    @apply text-lg md:text-xl text-nexora-grey font-medium leading-relaxed;
   }
 
   .body-md {
-    @apply text-base md:text-lg text-netflix-grey/90 leading-normal;
+    @apply text-base md:text-lg text-nexora-grey/90 leading-normal;
   }
 
   /* Spacing System */
@@ -78,8 +78,12 @@
     @apply bg-white/10 backdrop-blur-md border border-white/10;
   }
 
-  .netflix-gradient-bottom {
+  .nexora-gradient-bottom {
     background: linear-gradient(to top, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 0) 100%);
+  }
+
+  .nexora-logo-gradient {
+    @apply bg-gradient-to-r from-[#E50914] to-[#B20710] bg-clip-text text-transparent;
   }
 
   .no-scrollbar::-webkit-scrollbar {

@@ -18,7 +18,7 @@ export const HeroActions = () => {
         variant="secondary"
         size="lg"
         leftIcon={<Info className="h-5 w-5 md:h-6 md:w-6" />}
-        className="rounded-sm bg-netflix-grey/30 hover:bg-netflix-grey/40 backdrop-blur-md border-none text-white font-bold"
+        className="rounded-sm bg-nexora-grey/30 hover:bg-nexora-grey/40 backdrop-blur-md border-none text-white font-bold"
       >
         More Info
       </Button>

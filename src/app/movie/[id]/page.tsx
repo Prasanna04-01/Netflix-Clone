@@ -24,14 +24,14 @@ export async function generateMetadata({ params }: MoviePageProps): Promise<Meta
   const { id } = await params;
   const movieId = parseMovieId(id);
 
-  if (!movieId) return { title: "Movie Not Found | Netflix" };
+  if (!movieId) return { title: "Movie Not Found | Nexora" };
 
   try {
     const movie = await movieService.getMovieDetails(movieId);
     
     return {
       title: movie.title || "Movie Details",
-      description: movie.overview || "Stream this movie on Netflix",
+      description: movie.overview || "Stream this movie on Nexora",
       openGraph: {
         title: movie.title,
         description: movie.overview,
@@ -47,8 +47,8 @@ export async function generateMetadata({ params }: MoviePageProps): Promise<Meta
   } catch (error) {
     // Return fallback metadata on API failure to prevent page crash
     return { 
-      title: "Movie Details | Netflix",
-      description: "Explore cinematic details on Netflix."
+      title: "Movie Details | Nexora",
+      description: "Explore cinematic details on Nexora."
     };
   }
 }
@@ -99,7 +99,7 @@ export default async function MoviePage({ params }: MoviePageProps) {
                 </h1>
                 
                 {movie.tagline && (
-                  <p className="text-lg md:text-xl text-netflix-red italic font-medium mb-6 opacity-90">
+                  <p className="text-lg md:text-xl text-nexora-red italic font-medium mb-6 opacity-90">
                     "{movie.tagline}"
                   </p>
                 )}

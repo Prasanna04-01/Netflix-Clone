@@ -33,7 +33,7 @@ export const MovieMetadata = ({
           <span>{rating.toFixed(1)} Rating</span>
         </div>
 
-        <span className="text-netflix-grey">|</span>
+        <span className="text-nexora-grey">|</span>
 
         {/* Release Year */}
         <div className="flex items-center gap-1.5 text-white/90">
@@ -41,7 +41,7 @@ export const MovieMetadata = ({
           <span>{new Date(releaseDate).getFullYear()}</span>
         </div>
 
-        <span className="text-netflix-grey">|</span>
+        <span className="text-nexora-grey">|</span>
 
         {/* Runtime */}
         <div className="flex items-center gap-1.5 text-white/90">
@@ -49,7 +49,7 @@ export const MovieMetadata = ({
           <span>{hours}h {minutes}m</span>
         </div>
 
-        <span className="text-netflix-grey">|</span>
+        <span className="text-nexora-grey">|</span>
 
         {/* Certification Badge */}
         <span className="px-2 py-0.5 border border-white/40 rounded text-xs uppercase tracking-widest text-white/80">
@@ -72,15 +72,15 @@ export const MovieMetadata = ({
       {/* Additional Stats */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-4 border-t border-white/10">
         <div className="flex flex-col gap-1">
-          <span className="text-xs text-netflix-grey uppercase tracking-wider">Status</span>
+          <span className="text-xs text-nexora-grey uppercase tracking-wider">Status</span>
           <span className="text-sm font-semibold text-white/90">{status}</span>
         </div>
         <div className="flex flex-col gap-1">
-          <span className="text-xs text-netflix-grey uppercase tracking-wider">Language</span>
+          <span className="text-xs text-nexora-grey uppercase tracking-wider">Language</span>
           <span className="text-sm font-semibold text-white/90 uppercase">{originalLanguage}</span>
         </div>
         <div className="flex flex-col gap-1">
-          <span className="text-xs text-netflix-grey uppercase tracking-wider">Certification</span>
+          <span className="text-xs text-nexora-grey uppercase tracking-wider">Certification</span>
           <span className="text-sm font-semibold text-white/90">PG-13</span>
         </div>
       </div>

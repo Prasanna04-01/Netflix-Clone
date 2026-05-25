@@ -27,7 +27,7 @@ export const Navbar = () => {
         className={cn(
           "fixed top-0 z-40 w-full transition-all duration-500 ease-in-out",
           isScrolled 
-            ? "bg-netflix-black/95 backdrop-blur-md shadow-lg py-3" 
+            ? "bg-nexora-black/95 backdrop-blur-md shadow-lg py-3" 
             : "bg-gradient-to-b from-black/80 to-transparent py-5"
         )}
       >
@@ -45,9 +45,9 @@ export const Navbar = () => {
             {/* Logo */}
             <Link 
               href={ROUTES.HOME} 
-              className="text-2xl lg:text-3xl font-black italic tracking-tighter text-netflix-red"
+              className="text-2xl lg:text-3xl font-black italic tracking-tighter nexora-logo-gradient"
             >
-              NETFLIX
+              NEXORA
             </Link>
 
             {/* Desktop Navigation */}
@@ -62,7 +62,7 @@ export const Navbar = () => {
                         "text-sm font-medium transition-colors duration-300",
                         isActive 
                           ? "text-white cursor-default" 
-                          : "text-netflix-grey hover:text-white"
+                          : "text-nexora-grey hover:text-white"
                       )}
                     >
                       {item.label}
@@ -92,7 +92,7 @@ export const Navbar = () => {
               className="p-1 text-white hover:opacity-80 transition-opacity"
               aria-label="Profile"
             >
-              <div className="h-8 w-8 rounded-md bg-netflix-red flex items-center justify-center font-bold text-xs">
+              <div className="h-8 w-8 rounded-md bg-gradient-to-br from-nexora-red to-[#B20710] flex items-center justify-center font-bold text-xs shadow-lg shadow-nexora-red/20">
                 N
               </div>
             </button>

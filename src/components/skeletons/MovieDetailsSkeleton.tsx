@@ -5,7 +5,7 @@ import { MovieRowSkeleton } from "./MovieSkeletons";
  */
 export const MovieDetailsSkeleton = () => {
   return (
-    <div className="relative min-h-screen bg-netflix-black overflow-hidden">
+    <div className="relative min-h-screen bg-nexora-black overflow-hidden">
       {/* Backdrop Skeleton */}
       <div className="absolute top-0 left-0 w-full h-[70vh] bg-white/5 animate-pulse" />
       

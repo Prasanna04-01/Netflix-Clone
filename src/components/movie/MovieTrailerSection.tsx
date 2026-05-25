@@ -56,7 +56,7 @@ export const MovieTrailerSection = ({ movieId, title }: MovieTrailerSectionProps
       {showTrailerFallback && (
         <div className="rounded-xl border border-white/10 bg-white/5 px-5 py-4 text-white/80 backdrop-blur-sm">
           <p className="text-lg font-semibold text-white">Trailer Not Available</p>
-          <p className="mt-1 text-sm text-netflix-grey">
+          <p className="mt-1 text-sm text-nexora-grey">
             TMDB does not currently provide a playable YouTube trailer for "{title}".
           </p>
         </div>
@@ -77,13 +77,13 @@ export const MovieTrailerSection = ({ movieId, title }: MovieTrailerSectionProps
                 autoplay
               />
             ) : loading ? (
-              <div className="flex aspect-video items-center justify-center bg-netflix-black text-white">
+              <div className="flex aspect-video items-center justify-center bg-nexora-black text-white">
                 <p className="text-lg font-semibold">Loading trailer...</p>
               </div>
             ) : showTrailerFallback ? (
-              <div className="flex aspect-video flex-col items-center justify-center bg-netflix-black px-6 text-center text-white">
+              <div className="flex aspect-video flex-col items-center justify-center bg-nexora-black px-6 text-center text-white">
                 <p className="text-2xl font-bold">Trailer Not Available</p>
-                <p className="mt-3 max-w-xl text-sm text-netflix-grey">
+                <p className="mt-3 max-w-xl text-sm text-nexora-grey">
                   TMDB does not currently provide a playable YouTube trailer for "{title}".
                 </p>
               </div>

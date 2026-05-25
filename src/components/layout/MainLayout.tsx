@@ -13,7 +13,7 @@ interface MainLayoutProps {
  */
 export const MainLayout = ({ children, className }: MainLayoutProps) => {
   return (
-    <div className="relative min-h-screen bg-netflix-black flex flex-col">
+    <div className="relative min-h-screen bg-nexora-black flex flex-col">
       <Navbar />
       <main className={cn("flex-grow", className)}>
         {children}

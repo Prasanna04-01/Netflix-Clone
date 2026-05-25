@@ -18,10 +18,10 @@ export const SearchEmptyState = ({ query }: SearchEmptyStateProps) => {
       className="flex flex-col items-center justify-center py-20 text-center"
     >
       <div className="mb-6 p-6 rounded-full bg-white/5">
-        <Search className="h-12 w-12 text-netflix-grey opacity-20" />
+        <Search className="h-12 w-12 text-nexora-grey opacity-20" />
       </div>
       <h3 className="heading-md text-white mb-2">
-        {query ? `No results found for "${query}"` : "Search Netflix"}
+        {query ? `No results found for "${query}"` : "Search Nexora"}
       </h3>
       <p className="body-md max-w-sm">
         {query 

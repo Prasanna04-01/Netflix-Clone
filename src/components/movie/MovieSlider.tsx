@@ -44,7 +44,7 @@ export const MovieSlider = ({ children }: MovieSliderProps) => {
       {showLeftArrow && (
         <button
           onClick={() => scroll("left")}
-          className="absolute left-0 top-0 bottom-0 z-20 hidden lg:flex items-center justify-center w-12 bg-netflix-black/40 hover:bg-netflix-black/60 transition-all opacity-0 group-hover:opacity-100"
+          className="absolute left-0 top-0 bottom-0 z-20 hidden lg:flex items-center justify-center w-12 bg-nexora-black/40 hover:bg-nexora-black/60 transition-all opacity-0 group-hover:opacity-100"
           aria-label="Scroll left"
         >
           <ChevronLeft className="h-8 w-8 text-white" />
@@ -64,7 +64,7 @@ export const MovieSlider = ({ children }: MovieSliderProps) => {
       {showRightArrow && (
         <button
           onClick={() => scroll("right")}
-          className="absolute right-0 top-0 bottom-0 z-20 hidden lg:flex items-center justify-center w-12 bg-netflix-black/40 hover:bg-netflix-black/60 transition-all opacity-0 group-hover:opacity-100"
+          className="absolute right-0 top-0 bottom-0 z-20 hidden lg:flex items-center justify-center w-12 bg-nexora-black/40 hover:bg-nexora-black/60 transition-all opacity-0 group-hover:opacity-100"
           aria-label="Scroll right"
         >
           <ChevronRight className="h-8 w-8 text-white" />

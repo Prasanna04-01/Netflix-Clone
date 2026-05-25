@@ -21,7 +21,7 @@ export const SectionTitle = ({
         {children}
       </h2>
       {subtitle && (
-        <p className="body-md mt-1 text-netflix-grey">{subtitle}</p>
+        <p className="body-md mt-1 text-nexora-grey">{subtitle}</p>
       )}
     </div>
   );

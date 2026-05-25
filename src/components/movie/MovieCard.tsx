@@ -53,8 +53,8 @@ export const MovieCard = memo(({ movie, className }: MovieCardProps) => {
               whileHover={shouldReduceMotion ? {} : { scale: 1.05, zIndex: 10 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className={cn(
-                "group relative aspect-[2/3] min-w-[140px] md:min-w-[180px] lg:min-w-[220px] cursor-pointer rounded-md overflow-hidden bg-netflix-dark",
-                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-netflix-red focus-visible:ring-offset-2 focus-visible:ring-offset-netflix-black",
+                "group relative aspect-[2/3] min-w-[140px] md:min-w-[180px] lg:min-w-[220px] cursor-pointer rounded-md overflow-hidden bg-nexora-dark",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-nexora-red focus-visible:ring-offset-2 focus-visible:ring-offset-nexora-black",
                 className
               )}
             >
@@ -68,7 +68,7 @@ export const MovieCard = memo(({ movie, className }: MovieCardProps) => {
               />
 
               {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-netflix-black via-netflix-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="absolute inset-0 bg-gradient-to-t from-nexora-black via-nexora-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <div className="absolute top-2 right-2">
                   <button
                     type="button"
@@ -103,7 +103,7 @@ export const MovieCard = memo(({ movie, className }: MovieCardProps) => {
             whileHover={shouldReduceMotion ? {} : { scale: 1.05, zIndex: 10 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
             className={cn(
-              "group relative aspect-[2/3] min-w-[140px] md:min-w-[180px] lg:min-w-[220px] cursor-not-allowed rounded-md overflow-hidden bg-netflix-dark opacity-80",
+              "group relative aspect-[2/3] min-w-[140px] md:min-w-[180px] lg:min-w-[220px] cursor-not-allowed rounded-md overflow-hidden bg-nexora-dark opacity-80",
               className
             )}
             aria-disabled="true"
@@ -117,7 +117,7 @@ export const MovieCard = memo(({ movie, className }: MovieCardProps) => {
               loading="lazy"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-netflix-black via-netflix-black/30 to-transparent">
+            <div className="absolute inset-0 bg-gradient-to-t from-nexora-black via-nexora-black/30 to-transparent">
               <div className="absolute bottom-0 p-3 w-full">
                 <h3 className="text-sm md:text-base font-bold text-white line-clamp-1 mb-1">
                   {movieLabel}
